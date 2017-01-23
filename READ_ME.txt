@@ -1,0 +1,4 @@
+The program relies on a seperate batch file and program that I made to convert bmps into char arrays with transparency masks;
+By running graphicsToSource all bmp files in the project, stored in graphics, will be converted into a c header and source file called Resources.h/c respectively. The Bitmap converter can only convert bitmaps stored in 24 Bit RGB format. It produces black and white bmps stored in vertical byte order which is used by the OLED on the orbit booster pack. All colour is first converted to grayscale and then dithered into a 1bpp image. Originally this was going to be part of the main program and the raw files would be stored on the EEPROM, but 32 kB is way too low to store all the assets so this program and batch file were built seperately.
+
+- Edwin Lin
